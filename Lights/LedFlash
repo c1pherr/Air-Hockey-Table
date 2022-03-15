@@ -1,0 +1,13 @@
+        
+import RPi.GPIO as GPIO
+import time as t
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(24,GPIO.OUT)
+
+while True:
+	GPIO.output(24,1)
+	t.sleep(1)
+
+	GPIO.output(24,0)
+	t.sleep(1)
